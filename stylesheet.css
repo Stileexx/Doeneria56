@@ -1,0 +1,223 @@
+/* Google Fonts Poppins 200-900 */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* CSS Reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--additional-color);
+  border-radius: 10px;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+html::-webkit-scrollbar {
+  width: 0.875rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+:root {
+  --primary-color: #60ba56;
+  --secondary-color: #2878a0;
+  --additional-color: #afdc70;
+}
+
+section {
+  padding: 50px 10%;
+}
+
+img {
+  width: 100%;
+}
+
+*::selection {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10%;
+  transition: 0.2s;
+}
+
+b {
+  color: var(--additional-color);
+  margin-bottom: 1px;
+  font-size: large;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #fff;
+  background-color: var(--additional-color);
+  border-radius: 16px;
+  transition: 0.4s;
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-btn a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: #000000;
+  font-weight: 500;
+  background-color: var(--additional-color);
+  border-radius: 16px;
+  transition: 0.4s;
+}
+
+.contact-btn a:hover {
+  color: #fff;
+  background-color: var(--additional-color);
+  border-radius: 16px;
+  background-color: var(--primary-color);
+  transition: 0.4s ease-out;
+}
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+}
+
+.home {
+  width: 100;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: url(img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 1rem;
+}
+
+.hero-text {
+  flex: 1 1 17rem;
+}
+
+.hero-img {
+  flex: 1 1 20rem;
+}
+
+.hero-text span {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  color: var(--secondary-color);
+}
+
+.hero-text p {
+  margin: 0.5rem 0 1.4rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 2px solid var(--additional-color);
+  border-radius: 40px;
+  color: var(--additional-color);
+  font-weight: 500;
+  transition: 0.7s;
+}
+
+.btn:hover {
+  letter-spacing: 2px;
+  color: #fff;
+  background: var(--primary-color);
+  transition: 0.4s;
+  border: var(--primary-color);
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url(img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.about-container {
+  background: #000;
+  /* change fff */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 10px;
+  border-top: 6px solid var(--primary-color);
+  padding: 20px;
+  gap: 2rem;
+}
+
+/* .box-img {
+  width: 30%;
+  display: flex;
+  align-items: center;
+} */
+
+/* https://youtu.be/S7i5eVQwIS0?si=Te7cW189Ec4GuGqO&t=1116 */
+
+/* img bug untersuchen */
