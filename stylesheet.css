@@ -72,7 +72,7 @@ b {
 
 header.active {
 
-  box-shadow: 0 0 10px rgba(14 55 54 / 15%);
+  box-shadow: 0 0 10px rgba(14, 55, 54, 0.15);
   background: #fff;
 }
 
