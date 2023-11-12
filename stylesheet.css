@@ -204,7 +204,7 @@ header.active {
 
 .about h1 {
   font-size: 2.5rem;
-  color: #fff;
+  color: var(--secondary-color);
   margin-bottom: 2rem;
   text-transform: uppercase;
 }
@@ -256,7 +256,79 @@ header.active {
   letter-spacing: 1px;
 }
 
+.heading {
+  text-align: center;
+
+}
+
+
+.heading h2{
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+
+}
+
+.speisekarte-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+
+}
+
+.speisekarte-box {
+  position: relative;
+  flex: 1 1 17rem;
+  box-shadow: 0 4px 4px rgb(14, 55, 54 / 15%);
+  border-radius: 0.5rem;
+  height: auto;
+}
+
+.speisekarte-img {
+  width: 100%;
+  height: 300px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.speisekarte-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.speisekarte-img img {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+.speisekarte-box h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  padding: 10px;
+
+}
+
+.speisekarte-box h2 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+/* cart icon code... */
+/* cart icon hover code... */
+
+
+
 /* https://youtu.be/S7i5eVQwIS0?si=g__x_SdkS1C303NT&t=1454 */
+
+/* 30min */
 
 /* img bug untersuchen */
 /* war doch kein img bug ist nur die bild größe */
