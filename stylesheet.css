@@ -36,6 +36,7 @@ html::-webkit-scrollbar-track {
   --primary-color: #60ba56;
   --secondary-color: #2878a0;
   --additional-color: #afdc70;
+  --shadow-color: rgba(14, 55, 54, 0.15);
 }
 
 section {
@@ -72,7 +73,7 @@ b {
 
 header.active {
 
-  box-shadow: 0 0 10px rgba(14, 55, 54, 0.15);
+  box-shadow: 0 0 10px var(--shadow-color);
   background: #fff;
 }
 
@@ -211,7 +212,6 @@ header.active {
 
 .about-container {
   background: #fff;
-  /* change fff */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -262,14 +262,14 @@ header.active {
 }
 
 
-.heading h2{
+.heading h2 {
   font-size: 2rem;
   color: var(--secondary-color);
   margin-bottom: 0.5rem;
 
 }
 
-.speisekarte-container{
+.speisekarte-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -282,7 +282,7 @@ header.active {
 .speisekarte-box {
   position: relative;
   flex: 1 1 17rem;
-  box-shadow: 0 4px 4px rgb(14, 55, 54 / 15%);
+  box-shadow: 0 4px 4px var(--shadow-color);
   border-radius: 0.5rem;
   height: auto;
 }
