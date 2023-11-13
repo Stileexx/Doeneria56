@@ -72,12 +72,9 @@ b {
 }
 
 header.active {
-
   box-shadow: 0 0 10px var(--shadow-color);
   background: #fff;
 }
-
-
 
 .logo {
   display: flex;
@@ -231,7 +228,6 @@ header.active {
   height: 100%;
   object-fit: contain;
   object-position: center;
-
 }
 
 .about-box {
@@ -240,7 +236,6 @@ header.active {
   flex-direction: column;
   align-items: center;
   text-align: center;
-
 }
 
 .about-box h3 {
@@ -258,15 +253,13 @@ header.active {
 
 .heading {
   text-align: center;
-
 }
-
 
 .heading h2 {
   font-size: 2rem;
   color: var(--secondary-color);
   margin-bottom: 0.5rem;
-
+  padding: 50px 10%;
 }
 
 .speisekarte-container,
@@ -277,7 +270,6 @@ header.active {
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2rem;
-
 }
 
 .speisekarte-box {
@@ -305,7 +297,7 @@ header.active {
 }
 
 .speisekarte-img img:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
   transition: 0.7s;
 }
 
@@ -314,7 +306,6 @@ header.active {
   font-weight: 500;
   color: var(--secondary-color);
   padding: 10px;
-
 }
 
 .speisekarte-box h2 {
@@ -334,7 +325,6 @@ header.active {
   box-shadow: 0px 4px 4px var(--shadow-color);
   padding: 20px;
   border-radius: 0.5rem;
-
 }
 
 .box img {
@@ -348,13 +338,10 @@ header.active {
 .box .bx {
   color: var(--secondary-color);
   margin-top: 0.5rem;
-
-
 }
 
 .box p {
   margin: 0.5rem 0 1rem;
-
 }
 
 .box h2 {
@@ -363,7 +350,121 @@ header.active {
   letter-spacing: 1px;
 }
 
-/* -------------------- */
+.kontakt-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.kontakt-info {
+  flex: 1 1 20rem;
+}
+
+.kontakt-form {
+  flex: 1 1 20rem;
+  display: flex;
+  justify-content: center;
+}
+
+.kontakt-info h2 {
+  font-size: 1.7rem;
+  color: var(--secondary-color);
+}
+
+.kontakt-info p {
+  margin: 0.5rem 0 1;
+}
+
+.adresse {
+  display: flex;
+  flex-direction: row;
+}
+
+.adresse i {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+}
+
+.adresse span {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.social {
+  margin-top: 1rem;
+}
+
+.social a {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-right: 1rem;
+  transition: 0.5s;
+}
+
+.social a:hover {
+  font-size: 24px;
+  color: var(--secondary-color);
+  margin-right: 1rem;
+}
+
+/* .kontakt-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+} */
+
+form input,
+textarea,
+iframe {
+  width: 100%;
+  padding: 17px;
+  border-radius: 0.5rem;
+  outline: none;
+  margin-bottom: 1rem;
+  background-color: var(--additional-color);
+  border: 1px;
+  box-shadow: 0 4px 4px 2px rgba(14, 55, 54, 0.15);
+}
+
+/* .map {
+  width: 100%;
+  padding: 17px;
+  border-radius: 0.5rem;
+
+  margin-bottom: 1rem;
+  border: 20px;
+  background-color: var(--additional-color);
+} */
+
+/* form input::placeholder,
+textarea::placeholder {
+  color: var(--primary-color);
+}
+
+form textarea {
+  resize: none;
+  height: 150px;
+}
+
+form .btn {
+  max-width: 100px;
+  background: var(--primary-color);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+}
+
+form .bt:hover {
+  background: var(--secondary-color);
+} */
+
+/* --------
+------------ */
 
 /* .bewertungen-container {
   height: 100vh;
