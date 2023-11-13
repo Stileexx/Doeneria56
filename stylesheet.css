@@ -269,7 +269,8 @@ header.active {
 
 }
 
-.speisekarte-container {
+.speisekarte-container,
+.bewertungen-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -300,6 +301,7 @@ header.active {
   object-fit: cover;
   object-position: center;
   transition: transform 0.7s;
+  cursor: pointer;
 }
 
 .speisekarte-img img:hover {
@@ -325,6 +327,43 @@ header.active {
 /* cart icon code... */
 
 /* cart icon hover code... */
+
+.bewertungen-container .box {
+  flex: 1 1 16rem;
+  text-align: center;
+  box-shadow: 0px 4px 4px var(--shadow-color);
+  padding: 20px;
+  border-radius: 0.5rem;
+
+}
+
+.box img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--additional-color);
+}
+
+.box .bx {
+  color: var(--secondary-color);
+  margin-top: 0.5rem;
+
+
+}
+
+.box p {
+  margin: 0.5rem 0 1rem;
+
+}
+
+.box h2 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
+
+/* -------------------- */
 
 /* .bewertungen-container {
   height: 100vh;
