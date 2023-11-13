@@ -301,7 +301,7 @@ header.active {
   object-position: center;
 }
 
-.speisekarte-img img {
+.speisekarte-img img:hover {
   transform: scale(1.1);
   transition: 0.7s;
 }
@@ -323,6 +323,7 @@ header.active {
 
 /* cart icon code... */
 /* cart icon hover code... */
+
 
 
 
