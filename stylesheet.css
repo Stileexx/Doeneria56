@@ -366,11 +366,19 @@ header.active {
   flex: 1 1 20rem;
   display: flex;
   justify-content: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.kontakt-form h2 {
+  font-size: 1.7rem;
+  color: var(--secondary-color);
 }
 
 .kontakt-info h2 {
   font-size: 1.7rem;
   color: var(--secondary-color);
+  margin-bottom: 10px;
 }
 
 .kontakt-info p {
@@ -379,17 +387,19 @@ header.active {
 
 .adresse {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .adresse i {
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
-  font-size: 20px;
+  margin-top: 0.5rem;
+  font-size: 25px;
 }
 
 .adresse span {
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   margin-left: 1rem;
 }
@@ -399,7 +409,7 @@ header.active {
 }
 
 .social a {
-  font-size: 24px;
+  font-size: 34px;
   color: var(--primary-color);
   margin-right: 1rem;
   transition: 0.5s;
@@ -411,24 +421,45 @@ header.active {
   margin-right: 1rem;
 }
 
-/* .kontakt-form {
+.kontakt-form form {
   width: 100%;
   display: flex;
-  flex-direction: row;
-} */
+  flex-direction: column;
+}
 
-form input,
-textarea,
-iframe {
+/* form input,
+textarea {
   width: 100%;
   padding: 17px;
   border-radius: 0.5rem;
   outline: none;
   margin-bottom: 1rem;
-  background-color: var(--additional-color);
-  border: 1px;
+  border: 2px solid var(--primary-color);
   box-shadow: 0 4px 4px 2px rgba(14, 55, 54, 0.15);
 }
+
+form textarea {
+  resize: none;
+  height: 150px;
+}
+
+form .btn {
+  max-width: 100px;
+  background: var(--primary-color);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+}
+
+form .btn:hover {
+  background-color: var(--secondary-color);
+} */
+/* .kontakt-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+} */
 
 /* .map {
   width: 100%;
@@ -450,14 +481,7 @@ form textarea {
   height: 150px;
 }
 
-form .btn {
-  max-width: 100px;
-  background: var(--primary-color);
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: none;
-}
+
 
 form .bt:hover {
   background: var(--secondary-color);
