@@ -362,6 +362,13 @@ header.active {
   flex: 1 1 20rem;
 }
 
+.map-container {
+  border: 3px solid var(--additional-color);
+  border-radius: 10px;
+  overflow: hidden; /* To hide the border outside the border-radius */
+  box-shadow: 0 4px 4px 2px rgba(14, 55, 54, 0.15);
+}
+
 .kontakt-form {
   flex: 1 1 20rem;
   display: flex;
@@ -415,16 +422,46 @@ header.active {
 }
 
 .social a:hover {
-  font-size: 24px;
+  font-size: 44px;
   color: var(--secondary-color);
   margin-right: 1rem;
 }
 
-.kontakt-form form {
+.about-us {
+  padding: 50px 10%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.about-us-container {
+  background: #fff;
+  border-radius: 10px;
+  border-top: 6px solid var(--primary-color);
+  padding: 20px;
+  max-width: 1600px; /* Adjust the max-width according to your design */
+  text-align: center;
+}
+
+.about-us-container p {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  line-height: 1.5;
+}
+
+/* .kontakt-form form {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
+} */
 
 /* form input,
 textarea {
