@@ -12,12 +12,12 @@
   list-style: none;
   box-sizing: border-box;
 }
-
+/* Basic styling for the HTML document */
 html {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
-
+/* Styling for scrollbar */
 html::-webkit-scrollbar-thumb {
   background-color: var(--additional-color);
   border-radius: 10px;
@@ -31,7 +31,7 @@ html::-webkit-scrollbar {
 html::-webkit-scrollbar-track {
   background-color: #fff;
 }
-
+/* Root variables for color scheme */
 :root {
   --primary-color: #60ba56;
   --secondary-color: #2878a0;
@@ -39,19 +39,20 @@ html::-webkit-scrollbar-track {
   --shadow-color: rgba(14, 55, 54, 0.15);
 }
 
+/* Global section styling */
 section {
   padding: 50px 10%;
 }
-
+/* Responsive image styling */
 img {
   width: 100%;
 }
-
+/* Text selection styling */
 *::selection {
   color: #fff;
   background: var(--primary-color);
 }
-
+/* Header styling */
 header {
   position: fixed;
   width: 100%;
@@ -64,18 +65,18 @@ header {
   padding: 10px 10%;
   transition: 0.2s;
 }
-
+/* Styling for emphasized text */
 b {
   color: var(--additional-color);
   margin-bottom: 1px;
   font-size: large;
 }
-
+/* Styling for active header state */
 header.active {
   box-shadow: 0 0 10px var(--shadow-color);
   background: #fff;
 }
-
+/* Logo styling */
 .logo {
   display: flex;
   align-items: center;
@@ -88,7 +89,7 @@ header.active {
   width: 50px;
   margin-right: 10px;
 }
-
+/* Navigation bar styling */
 .navbar {
   display: flex;
 }
@@ -106,7 +107,7 @@ header.active {
   border-radius: 16px;
   transition: 0.4s;
 }
-
+/* Contact button styling */
 .contact-btn {
   display: flex;
   justify-content: flex-end;
@@ -129,14 +130,14 @@ header.active {
   background-color: var(--primary-color);
   transition: 0.4s ease-out;
 }
-
+/* Menu icon styling */
 #menu-icon {
   font-size: 24px;
   cursor: pointer;
   z-index: 1000;
   display: none;
 }
-
+/* Home section styling */
 .home {
   width: 100;
   min-height: 100vh;
@@ -154,7 +155,7 @@ header.active {
 }
 
 .hero-img {
-  flex: 1 1 20rem;
+  flex: 1 1 25rem;
 }
 
 .hero-text span {
@@ -189,7 +190,7 @@ header.active {
   transition: 0.4s;
   border: var(--primary-color);
 }
-
+/* bestseller section styling */
 .bestseller {
   display: flex;
   align-items: center;
@@ -216,7 +217,6 @@ header.active {
   box-shadow: 0 4px 4px 2px rgba(14, 55, 54, 0.15);
   cursor: pointer;
 }
-
 
 .bestseller h1 {
   font-size: 2.5rem;
@@ -281,6 +281,7 @@ header.active {
   padding: 50px 10%;
 }
 
+/* Menu section styling */
 .speisekarte-container,
 .bewertungen-container {
   display: flex;
@@ -298,14 +299,14 @@ header.active {
   border-radius: 0.5rem;
   height: auto;
 }
-
+/* Image container styling */
 .speisekarte-img {
   width: 100%;
   height: 300px;
   border-radius: 0.5rem;
   overflow: hidden;
 }
-
+/* Image inside container styling */
 .speisekarte-img img {
   width: 100%;
   height: 100%;
@@ -314,12 +315,12 @@ header.active {
   transition: transform 0.7s;
   cursor: pointer;
 }
-
+/* Hover effect for images */
 .speisekarte-img img:hover {
   transform: scale(1.15);
   transition: 0.7s;
 }
-
+/* Styling for heading in speisekarte-box */
 .speisekarte-box h3 {
   font-size: 1rem;
   font-weight: 500;
@@ -601,8 +602,6 @@ header.active {
   line-height: 1.5;
   color: #ccc;
 }
-
-
 
 .footer-bottom a {
   text-decoration: underline;
