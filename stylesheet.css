@@ -194,11 +194,29 @@ header.active {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: url(img/background.png);
+  /* background: url(img/backgroundbestseller.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.7s;
+  cursor: pointer;
+  border-radius: 0.5rem; */
 }
+
+.about img {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 4px 4px 2px rgba(14, 55, 54, 0.15);
+  cursor: pointer;
+}
+
 
 .about h1 {
   font-size: 2.5rem;
@@ -226,7 +244,7 @@ header.active {
 .box-img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cov;
   object-position: center;
 }
 
@@ -365,7 +383,8 @@ header.active {
 .map-container {
   border: 3px solid var(--additional-color);
   border-radius: 10px;
-  overflow: hidden; /* To hide the border outside the border-radius */
+  overflow: hidden;
+  /* To hide the border outside the border-radius */
   box-shadow: 0 4px 4px 2px rgba(14, 55, 54, 0.15);
 }
 
@@ -447,7 +466,8 @@ header.active {
   border-radius: 10px;
   border-top: 6px solid var(--primary-color);
   padding: 20px;
-  max-width: 1600px; /* Adjust the max-width according to your design */
+  max-width: 1600px;
+  /* Adjust the max-width according to your design */
   text-align: center;
 }
 
@@ -463,151 +483,135 @@ header.active {
   flex-direction: column;
 } */
 
-/* form input,
-textarea {
-  width: 100%;
-  padding: 17px;
-  border-radius: 0.5rem;
-  outline: none;
-  margin-bottom: 1rem;
-  border: 2px solid var(--primary-color);
-  box-shadow: 0 4px 4px 2px rgba(14, 55, 54, 0.15);
+/* Stile für den Footer */
+.footer {
+  background-color: #333;
+  /* Hintergrundfarbe des Footers */
+  color: #fff;
+  /* Textfarbe */
+  padding: 50px 0;
+  /* Innenabstand oben/unten */
 }
 
-form textarea {
-  resize: none;
-  height: 150px;
-}
-
-form .btn {
-  max-width: 100px;
-  background: var(--primary-color);
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: none;
-}
-
-form .btn:hover {
-  background-color: var(--secondary-color);
-} */
-/* .kontakt-form {
-  width: 100%;
+.footer-container {
   display: flex;
-  flex-direction: row;
-} */
-
-/* .map {
-  width: 100%;
-  padding: 17px;
-  border-radius: 0.5rem;
-
-  margin-bottom: 1rem;
-  border: 20px;
-  background-color: var(--additional-color);
-} */
-
-/* form input::placeholder,
-textarea::placeholder {
-  color: var(--primary-color);
-}
-
-form textarea {
-  resize: none;
-  height: 150px;
-}
-
-
-
-form .bt:hover {
-  background: var(--secondary-color);
-} */
-
-/* --------
------------- */
-
-/* .bewertungen-container {
-  height: 100vh;
-  background-color: #fff;
-  padding: 2rem;
-  display: flex;
-  place-items: center;
-}
-
-.bewertungen {
-  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.bewertungen1 {
-  max-width: 21.5rem;
+.footer-logo {
+  flex: 1 1 200px;
+}
+
+.footer-logo img {
+  width: 100px;
+  /* Größe des Logos anpassen */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer-links,
+.footer-contact,
+.footer-social {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+}
+
+.footer-contact p {
+  margin-bottom: 8px;
+}
+
+.footer-social .social-icons {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-.bewertungen-content {
+.footer-social .social-icons a {
+  color: #ccc;
+  font-size: 24px;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social .social-icons a:last-child {
+  margin-right: 0;
+}
+
+.footer-social .social-icons a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
   text-align: center;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 5px -2px hsla(0, 0%, 0%, 0.1);
-  margin-top: -2.5rem;
-
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #555;
+  /* Obere Trennlinie */
+  font-size: 14px;
 }
 
-.bewertungen-text {
-  font-weight: 400;
-  font-style: italic;
-  font-size: 1rem;
-  line-height: 2;
-  color: grey;
-  margin: 3rem 0;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
-  overflow: hidden;
-
+.footer-bottom p {
+  margin: 0;
 }
 
-.bewertungen-name {
-  font-weight: 700;
-  font-size: 0.75rem;
-  color: var(--secondary-color);
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
-
+/* Stile für das Impressum */
+.impressum {
+  flex: 1 1 300px;
+  /* Breite des Impressum-Bereichs */
 }
 
-.bewertungen-image {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  position: relative;
+.impressum h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.bewertungen-image::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  border: 0.5rem solid var(--secondary-color);
-  box-shadow: 0 1px hsla(0, 0%, 0%, 0.1);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.impressum p {
+  margin-bottom: 5px;
+  line-height: 1.5;
+  color: #ccc;
 }
 
-.bewertungen-image img {
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  object-fit: cover;
-} */
+/* Zusätzliche Stile für die vertikale Linie */
+.vertical-line {
+  border-left: 1px solid #fff;
+  /* Stil der vertikalen Linie */
+  height: 100px;
+  /* Höhe der Linie anpassen */
+  margin: 0 20px;
+  /* Abstand zur nächsten Sektion */
+}
+
+
 
 /* https://youtu.be/S7i5eVQwIS0?si=g__x_SdkS1C303NT&t=1454 */
 /* https://youtu.be/S7i5eVQwIS0?si=0rbh6IPnI1K51iFW&t=2170 */
