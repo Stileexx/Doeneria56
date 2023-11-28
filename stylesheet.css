@@ -12,11 +12,13 @@
   list-style: none;
   box-sizing: border-box;
 }
+
 /* Basic styling for the HTML document */
 html {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
+
 /* Styling for scrollbar */
 html::-webkit-scrollbar-thumb {
   background-color: var(--additional-color);
@@ -31,6 +33,7 @@ html::-webkit-scrollbar {
 html::-webkit-scrollbar-track {
   background-color: #fff;
 }
+
 /* Root variables for color scheme */
 :root {
   --primary-color: #60ba56;
@@ -43,15 +46,18 @@ html::-webkit-scrollbar-track {
 section {
   padding: 50px 10%;
 }
+
 /* Responsive image styling */
 img {
   width: 100%;
 }
+
 /* Text selection styling */
 *::selection {
   color: #fff;
   background: var(--primary-color);
 }
+
 /* Header styling */
 header {
   position: fixed;
@@ -65,17 +71,20 @@ header {
   padding: 10px 10%;
   transition: 0.2s;
 }
+
 /* Styling for emphasized text */
 b {
   color: var(--additional-color);
   margin-bottom: 1px;
   font-size: large;
 }
+
 /* Styling for active header state */
 header.active {
   box-shadow: 0 0 10px var(--shadow-color);
   background: #fff;
 }
+
 /* Logo styling */
 .logo {
   display: flex;
@@ -89,6 +98,7 @@ header.active {
   width: 50px;
   margin-right: 10px;
 }
+
 /* Navigation bar styling */
 .navbar {
   display: flex;
@@ -107,6 +117,7 @@ header.active {
   border-radius: 16px;
   transition: 0.4s;
 }
+
 /* Contact button styling */
 .contact-btn {
   display: flex;
@@ -130,6 +141,7 @@ header.active {
   background-color: var(--primary-color);
   transition: 0.4s ease-out;
 }
+
 /* Menu icon styling */
 #menu-icon {
   font-size: 24px;
@@ -137,6 +149,7 @@ header.active {
   z-index: 1000;
   display: none;
 }
+
 /* Home section styling */
 .home {
   width: 100;
@@ -190,6 +203,7 @@ header.active {
   transition: 0.4s;
   border: var(--primary-color);
 }
+
 /* bestseller section styling */
 .bestseller {
   display: flex;
@@ -299,6 +313,7 @@ header.active {
   border-radius: 0.5rem;
   height: auto;
 }
+
 /* Image container styling */
 .speisekarte-img {
   width: 100%;
@@ -306,6 +321,7 @@ header.active {
   border-radius: 0.5rem;
   overflow: hidden;
 }
+
 /* Image inside container styling */
 .speisekarte-img img {
   width: 100%;
@@ -315,11 +331,13 @@ header.active {
   transition: transform 0.7s;
   cursor: pointer;
 }
+
 /* Hover effect for images */
 .speisekarte-img img:hover {
   transform: scale(1.15);
   transition: 0.7s;
 }
+
 /* Styling for heading in speisekarte-box */
 .speisekarte-box h3 {
   font-size: 1rem;
@@ -491,7 +509,7 @@ header.active {
   /* Hintergrundfarbe des Footers */
   color: #fff;
   /* Textfarbe */
-  padding: 50px 0;
+  padding-top: 50px;
   /* Innenabstand oben/unten */
 }
 
@@ -574,13 +592,20 @@ header.active {
 }
 
 .footer-bottom {
+  display: flex;
+  /* Enable Flexbox */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
   text-align: center;
-  margin-top: 30px;
-  padding-top: 10px;
+  /* Ensure text is centered if it wraps */
   border-top: 1px solid #555;
-  /* Obere Trennlinie */
   font-size: 14px;
+  height: 75px;
+  /* Set a fixed height for the footer */
 }
+
 
 .footer-bottom p {
   margin: 0;
@@ -588,7 +613,8 @@ header.active {
 
 /* Stile für das Impressum */
 .impressum {
-  flex: 1 1 300px;
+  flex: 1 1 200px;
+  margin-bottom: 20px;
   /* Breite des Impressum-Bereichs */
 }
 
