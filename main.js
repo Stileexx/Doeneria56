@@ -1,5 +1,5 @@
-let header = document.querySelector('header');
+let header = document.querySelector("header");
 
-window.addEventListener('scroll', () => {
-  header.classList.toggle('active', window.scrollY > 0);
+window.addEventListener("scroll", () => {
+  header.classList.toggle("active", window.scrollY > 0);
 });
