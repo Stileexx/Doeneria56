@@ -659,6 +659,7 @@ header.active {
   }
   header.active #menu-icon {
     color: var(--primary-color);
+    transition: 0.2s ease;
   }
   header .navbar {
     position: absolute;
@@ -690,5 +691,24 @@ header.active {
   }
   .kontakt-info h2 {
     font-size: 1.6rem;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-text span {
+    font-size: 0.8rem;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-text p {
+    font-size: 0.9rem;
   }
 }
