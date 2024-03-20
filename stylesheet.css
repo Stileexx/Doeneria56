@@ -197,10 +197,10 @@ header.active {
 }
 
 .btn:hover {
-  letter-spacing: 2px;
+  padding: 10px 30px;
   color: #fff;
   background: var(--primary-color);
-  transition: 0.4s;
+  transition: 0.7s;
   border: var(--primary-color);
 }
 
@@ -605,7 +605,6 @@ header.active {
   height: 75px;
   /* Set a fixed height for the footer */
 }
-
 
 .footer-bottom p {
   margin: 0;
