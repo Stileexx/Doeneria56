@@ -632,3 +632,18 @@ header.active {
   text-decoration: underline;
   color: #fff;
 }
+
+@media (max-width: 1100px) {
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 18px 4%;
+  }
+  section {
+    padding: 50px 4%;
+  }
+}
