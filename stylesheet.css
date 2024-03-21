@@ -193,15 +193,15 @@ header.active {
   border-radius: 40px;
   color: var(--additional-color);
   font-weight: 500;
-  transition: 0.7s;
+  transition: all 0.7s ease;
+  box-sizing: border-box;
 }
 
 .btn:hover {
   padding: 10px 30px;
   color: #fff;
   background: var(--primary-color);
-  transition: 0.7s;
-  border: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 /* bestseller section styling */
@@ -643,6 +643,7 @@ header.active {
   header {
     padding: 18px 4%;
   }
+
   section {
     padding: 50px 4%;
   }
@@ -652,15 +653,18 @@ header.active {
   header {
     padding: 11px 4%;
   }
+
   #menu-icon {
     display: initial;
     justify-content: flex-end;
     display: flex;
   }
+
   header.active #menu-icon {
     color: var(--primary-color);
     transition: 0.2s ease;
   }
+
   header .navbar {
     position: absolute;
     top: -500px;
@@ -673,25 +677,32 @@ header.active {
     transition: 0.2s ease;
     text-align: right;
   }
+
   .navbar.active {
     top: 100%;
   }
+
   .navbar a {
     pad: 1.5rem;
     display: block;
   }
+
   .hero-text h1 {
     font-size: 2.4rem;
   }
+
   .about h1 {
     font-size: 2rem;
   }
+
   .heading h2 {
     font-size: 1.6rem;
   }
+
   .kontakt-info h2 {
     font-size: 1.6rem;
   }
+
   .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -705,9 +716,11 @@ header.active {
   .hero-text span {
     font-size: 0.8rem;
   }
+
   .hero-text h1 {
     font-size: 2rem;
   }
+
   .hero-text p {
     font-size: 0.9rem;
   }
