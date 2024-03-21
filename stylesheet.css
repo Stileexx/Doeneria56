@@ -193,8 +193,7 @@ header.active {
   border-radius: 40px;
   color: var(--additional-color);
   font-weight: 500;
-  transition: all 0.7s ease;
-  box-sizing: border-box;
+  transition: all 0.4s ease;
 }
 
 .btn:hover {
