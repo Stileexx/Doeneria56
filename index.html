@@ -39,7 +39,7 @@
     <!-- Hero text and call to action button -->
 
     <div class="hero-text">
-      <span>Willkommen zur</span>
+      <span id="element"></span>
       <h1>Döneria 56 <br />aus Greifswald!</h1>
       <p>
         Hier erwarten Sie authentische Gerichte und ein einzigartiges
@@ -303,7 +303,15 @@
   </footer>
 
   <!-- Link to external JavaScript file -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Willkommen zur'],
+      typeSpeed: 80,
+    });
+  </script>
   <script src="main.js"></script>
+  
 </body>
 
 </html>
