@@ -1,3 +1,6 @@
+/* Google Fonts Poppins 200-900 */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* CSS Reset */
 
@@ -42,6 +45,11 @@ html::-webkit-scrollbar-track {
 /* Global section styling */
 section {
   padding: 50px 10%;
+}
+
+.section2 {
+  padding: 50px 10%;
+  background-color: hsl(38, 44%, 96%);
 }
 
 /* Responsive image styling */
@@ -154,7 +162,7 @@ header.active {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background: url(img/background.png);
+  background: url(assets/img/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   gap: 1rem;
