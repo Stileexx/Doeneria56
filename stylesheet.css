@@ -520,17 +520,16 @@ header.active {
   /* Hintergrundfarbe des Footers */
   color: #fff;
   /* Textfarbe */
-  padding-top: 50px;
+  padding: 50px 10%;
   /* Innenabstand oben/unten */
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
+
 }
 
 .footer-logo {
