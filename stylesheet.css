@@ -248,6 +248,7 @@ header.active {
 .bestseller-container {
   background: #fff;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   border-radius: 10px;
   border-top: 6px solid var(--primary-color);
@@ -312,7 +313,6 @@ header.active {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2rem;
 }
