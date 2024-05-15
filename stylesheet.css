@@ -661,6 +661,10 @@ header.active {
 }
 
 @media (max-width: 991px) {
+
+  html::-webkit-scrollbar {
+    width: 0rem;
+  }
   header {
     padding: 11px 4%;
   }
