@@ -114,6 +114,8 @@ header.active {
   padding: 10px 20px;
   color: #000000;
   font-weight: 500;
+  transition: 0.3s;
+
 }
 
 .navbar a:hover {
